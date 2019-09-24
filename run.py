@@ -35,7 +35,7 @@ navbar = dbc.NavbarSimple(
     ],
     sticky='top',
     color='light', 
-    light=True, 
+    light=False, 
     dark=False
 )
 
@@ -46,7 +46,7 @@ footer = dbc.Container(
                 [
                     html.Span('Scott Maxwell ', className='mr-2'),  
                     html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/scottwmwork/predict-movie-revenue'), 
-                    html.A(html.I(className='fab fa-linkedin mr-1'), href='www.linkedin.com/in/scott-maxwell-415171142'), 
+                    html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/scott-maxwell-415171142/'), 
                     html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/Scott_W_Maxwell'), 
                 ], 
                 className='lead'

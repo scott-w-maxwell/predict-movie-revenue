@@ -29,14 +29,11 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Value Proposition
+            ## Predicting Movie Revenue
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
-
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
-
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
-
+            Using machine learning, you can predict the revenue a movie based on budget, genre, and year.
+            
+            This may be useful for a variety of reasons such as movie producers who want to come up with a new idea for a movie that will create a large amount of revenue. It could also be useful for those interested in the profit a future movie that has been announced might make.
             """
         ),
         dcc.Link(dbc.Button('Call To Action', color='primary'), href='/predictions')
@@ -44,13 +41,14 @@ column1 = dbc.Col(
     md=4,
 )
 
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
+# gapminder = px.data.gapminder()
+# fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
+#            hover_name="country", log_x=True, size_max=60)
 
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        # dcc.Graph(figure=fig),
+        html.Img(src='assets/Movies.png', className='img-fluid')
     ]
 )
 
