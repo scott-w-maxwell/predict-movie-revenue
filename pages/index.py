@@ -36,7 +36,7 @@ column1 = dbc.Col(
             This may be useful for a variety of reasons such as movie producers who want to come up with a new idea for a movie that will create a large amount of revenue. It could also be useful for those interested in the profit a future movie that has been announced might make.
             """
         ),
-        dcc.Link(dbc.Button('Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Predict Movies', color='primary'), href='/predictions')
     ],
     md=4,
 )

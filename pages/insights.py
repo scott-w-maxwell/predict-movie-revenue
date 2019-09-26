@@ -28,6 +28,7 @@ column1 = dbc.Col(
             """
         
             ## Insights
+            
             As we can see from the 3d graph, the release year and budget effect the revenue quite heavily.
             """
         ),
