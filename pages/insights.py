@@ -65,7 +65,7 @@ fig1 = px.scatter_3d(df, x = 'release_year',y = 'budget', z = 'revenue', color =
 fig2 = px.scatter(df, x = 'budget', y ='revenue', color = 'revenue', trendline = 'ols', title = 'Revenue of Movies based on budget', template = 'plotly_dark')
 fig3 = px.bar(df, x = 'release_year', y ='revenue', color = 'revenue', title = 'Revenue of Movies based on year', template = 'plotly_dark')
 fig4 = px.bar(df_new, x = 'genre', y ='revenue', color = 'revenue', title = 'Revenue of Movies Relased Based on Genre', template = 'plotly_dark')
-fig5 = px.bar(top_movies, x = 'title', y ='revenue', color = 'revenue', title = 'Revenue of Movies Relased Based on Genre', template = 'plotly_dark')
+fig5 = px.bar(top_movies, x = 'title', y ='revenue', color = 'revenue', title = 'Top 5 Movies based on revenue', template = 'plotly_dark')
 column1 = dbc.Col(
     [
         dcc.Markdown(
