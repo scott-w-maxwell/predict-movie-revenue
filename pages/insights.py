@@ -62,10 +62,7 @@ top_movies['revenue'] = top_movies_temp.revenue
 #Create plot
 import plotly.express as px
 fig1 = px.scatter_3d(df, x = 'release_year',y = 'budget', z = 'revenue', color = 'revenue',opacity=0.7,size_max=8, title = 'Revenue of Movies<br>Based on Budget and Release Year', template = 'plotly_dark')
-fig2 = px.scatter(df, x = 'budget', y ='revenue', color = 'revenue', trendline = 'ols', title = 'Revenue of Movies based on budget', template = 'plotly_dark')
-fig3 = px.bar(df, x = 'release_year', y ='revenue', color = 'revenue', title = 'Revenue of Movies based on year', template = 'plotly_dark')
-fig4 = px.bar(df_new, x = 'genre', y ='revenue', color = 'revenue', title = 'Revenue of Movies Relased Based on Genre', template = 'plotly_dark')
-fig5 = px.bar(top_movies, x = 'title', y ='revenue', color = 'revenue', title = 'Top 5 Movies based on revenue', template = 'plotly_dark')
+
 column1 = dbc.Col(
     [
         dcc.Markdown(
@@ -83,11 +80,7 @@ column1 = dbc.Col(
 
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig1),
-        dcc.Graph(figure=fig2),
-        dcc.Graph(figure=fig3),
-        dcc.Graph(figure=fig4),
-        dcc.Graph(figure=fig5)
+        dcc.Graph(figure=fig1)
     ]
 )
 
