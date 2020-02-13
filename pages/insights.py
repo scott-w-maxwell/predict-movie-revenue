@@ -69,6 +69,10 @@ column1 = dbc.Col(
             """
         
             ## Insights
+
+            We can see from this 3 Dimensional Graph that a movie's budget and release year greatly 
+            influence a movie's revenue. You may notice at the top of this graph is the movie called "Avatar" that 
+            came out in 2009 which had a budget of 237 million USD and produce 2.79 billion USD at the box office.
             
             """
         ),
