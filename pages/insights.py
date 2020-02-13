@@ -61,7 +61,7 @@ top_movies['revenue'] = top_movies_temp.revenue
 
 #Create plot
 import plotly.express as px
-fig1 = px.scatter_3d(df, x = 'release_year',y = 'budget', z = 'revenue', custom_data = 'title', color = 'revenue',opacity=0.7,size_max=8, title = 'Revenue of Movies<br>Based on Budget and Release Year', template = 'plotly_dark')
+fig1 = px.scatter_3d(df, x = 'release_year', y = 'budget', z = 'revenue', color = 'revenue', opacity=0.7, size_max=8, title = 'Revenue of Movies<br>Based on Budget and Release Year', template = 'plotly_dark')
 
 column1 = dbc.Col(
     [
@@ -72,7 +72,7 @@ column1 = dbc.Col(
 
             We can see from this 3 Dimensional Graph that a movie's budget and release year greatly 
             influence a movie's revenue. You may notice at the top of this graph is the movie called "Avatar" that 
-            came out in 2009 which had a budget of 237 million USD and produce 2.79 billion USD at the box office.
+            came out in 2009 which had a budget of 237 million USD and produce 2.79 billion USD at the box.
             
             """
         ),
