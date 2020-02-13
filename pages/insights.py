@@ -61,7 +61,7 @@ top_movies['revenue'] = top_movies_temp.revenue
 
 #Create plot
 import plotly.express as px
-fig1 = px.scatter_3d(df, x = 'release_year',y = 'budget', z = 'revenue', color = 'revenue',opacity=0.7,size_max=8, title = 'Revenue of Movies<br>Based on Budget and Release Year', template = 'plotly_dark')
+fig1 = px.scatter_3d(df, x = 'release_year',y = 'budget', z = 'revenue', custom_data = 'title', color = 'revenue',opacity=0.7,size_max=8, title = 'Revenue of Movies<br>Based on Budget and Release Year', template = 'plotly_dark')
 
 column1 = dbc.Col(
     [
